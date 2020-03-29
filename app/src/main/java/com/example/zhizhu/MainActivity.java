@@ -36,12 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String clicked = "The button is Clicked";
                         Toast.makeText(this, clicked, Toast.LENGTH_SHORT).show();
                 Button btn = (Button) findViewById(R.id.Button_1);
-                int[] color;
-                color = new int[]{Color.DKGRAY,Color.CYAN,Color.YELLOW,Color.RED,Color.BLUE};
-                int aryLen = color.length;
-                Random random = new Random();
-                int rNum = random.nextInt(aryLen);
-                btn.setBackgroundColor(color[rNum]);
+                btn.setBackgroundResource(R.drawable.btn_playr2);
                 break;
         }
 
