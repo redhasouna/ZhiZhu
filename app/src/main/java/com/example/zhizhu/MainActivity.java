@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn = (Button) findViewById(R.id.Button_00);
+        Button btn = (Button) findViewById(R.id.Button_1);
         btn.setOnClickListener(this);
 
 
@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.Button_00:
+            case R.id.Button_1:
                 String clicked = "The button is Clicked";
                         Toast.makeText(this, clicked, Toast.LENGTH_SHORT).show();
-                Button btn = (Button) findViewById(R.id.Button_00);
+                Button btn = (Button) findViewById(R.id.Button_1);
                 int[] color;
                 color = new int[]{Color.DKGRAY,Color.CYAN,Color.YELLOW,Color.RED,Color.BLUE};
                 int aryLen = color.length;
